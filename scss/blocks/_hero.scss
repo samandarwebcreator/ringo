@@ -1,0 +1,135 @@
+.hero {
+  .hero__bg {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2) -13.19%,
+        rgba(0, 0, 0, 0.85) 94.01%
+      ),
+      url(../../img/herobg.jpg);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .hero__wrapper {
+    padding-top: 120px;
+    padding-bottom: 45px;
+  }
+
+  .hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &-title {
+      font-family: "Lato", Arial, sans-serif;
+      color: #fff;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 120%;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      width: 446px;
+      text-align: center;
+    }
+
+    &-text {
+      width: 537px;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 150%;
+      margin-bottom: 50px;
+    }
+
+    &-link {
+      color: #fff;
+      font-weight: 700;
+      line-height: 100%;
+      width: 260px;
+      padding: 22px 50px;
+      background: #ae7b3c;
+      box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
+      border: 2px solid transparent;
+      transition: all 0.4s ease-in-out;
+      border-radius: 3px;
+      margin-bottom: 120px;
+
+      &:hover {
+        color: #ae7b3c;
+        background-color: rgba(255, 255, 255, 0.527);
+        border: 2px solid #ae7b3c;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+
+  .hero__page-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  .hero__line {
+    opacity: 0.4;
+  }
+
+  .hero__arrow-link {
+    color: #fff;
+  }
+
+  .hero__pages-numbers {
+    max-width: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .hero__pages-wrapper {
+    border: 1px solid #ffffff6a;
+    border-radius: 50px;
+    padding: 7px 14px 10px 14px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .hero__pages-links {
+    text-align: center;
+    color: #ffffff2a;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: "Lato", Arial, sans-serif;
+  }
+
+  .hero__third-page__third {
+    border: 1px solid #fff;
+  }
+
+  .hero__pages-link__third {
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 640px) {
+    .hero__pages-numbers {
+      margin: 0 auto;
+    }
+    .hero__arrow {
+      display: none;
+    }
+    .hero__content-title {
+      width: 296px;
+      font-size: 28px;
+    }
+
+    .hero__content-text {
+      width: 300px;
+      line-height: 145%;
+    }
+  }
+}

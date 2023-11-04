@@ -1,0 +1,123 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .header__main-div {
+    .header__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 490px;
+    width: 100%;
+  }
+
+  .header__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &-link {
+      color: #282b22;
+      font-weight: 500;
+      line-height: 100%;
+      border-bottom: 2px solid transparent;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: #3d4a39;
+        border-bottom: 2px solid #ae7b3c;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+
+  .header__img-links__wrapper {
+    display: flex;
+    align-items: start;
+    max-width: 300px;
+    gap: 40px;
+  }
+
+  .header__tel-link {
+    font-family: "Lato", Arial, sans-serif;
+    color: #3d4a39;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    &::before {
+      content: url(../../icons/phone.svg);
+    }
+  }
+
+  .header__social-links {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+  }
+
+  .header__hamburger {
+    display: none;
+  }
+
+  @media only screen and (max-width: 999px) {
+    .header__nav {
+      display: none;
+    }
+
+    .header__wrapper {
+      display: flex;
+      align-items: start;
+      justify-content: end;
+    }
+
+    .header__right-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    .header__hamburger {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .header__nav {
+      display: none;
+    }
+
+    .header__img-links__wrapper {
+      display: none;
+    }
+
+    .header__wrapper {
+      display: flex;
+      align-items: start;
+      justify-content: end;
+    }
+
+    .header__right-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    .header__hamburger {
+      display: block;
+    }
+  }
+}
